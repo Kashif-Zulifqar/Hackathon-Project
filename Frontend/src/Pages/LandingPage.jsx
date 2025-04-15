@@ -37,7 +37,8 @@ function Landing() {
       className="landing-container"
       style={{
         boxSizing: "border-box",
-        backgroundImage: `url(${bg})`,
+        // backgroundImage: `url(${bg})`,
+        backgroundColor: "skyblue",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
@@ -61,19 +62,19 @@ function Landing() {
         </div>
       </header>
 
-      <section className="landing-hero">
+      <div className="landing-hero">
         <h1>Welcome to MyCourses</h1>
         <p>Your gateway to the world of knowledge</p>
-      </section>
+      </div>
 
-      <section className="courses-scroll">
+      <div className="courses-scroll">
         {courses.map((course, index) => (
           <div key={index} className="course-card">
             <h3>{course.title}</h3>
             <p>{course.desc}</p>
           </div>
         ))}
-      </section>
+      </div>
     </div>
   );
 }

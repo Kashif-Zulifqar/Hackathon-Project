@@ -2,9 +2,7 @@ import "./Pages.css";
 import Product from "../Components/Product";
 import Courses from "./Courses";
 import { useState } from "react";
-// import UserGraph from "../Components/UserGraph"; // Assume this is your chart component
 
-// Course Images
 import cloud from "./../assets/cloud.jpg";
 import ai from "./../assets/ai.jpg";
 import cyber from "./../assets/cyber.jpg";
@@ -143,10 +141,9 @@ export default function Home() {
 
       {/* Right Panel - User Graph */}
       {selectedUser && (
-        <section className="user-stats">
+        <div className="user-stats">
           <h4>{selectedUser.name}'s Stats</h4>
-          {/* <UserGraph user={selectedUser} /> */}
-        </section>
+        </div>
       )}
     </div>
   );

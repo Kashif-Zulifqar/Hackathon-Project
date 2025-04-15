@@ -2,7 +2,9 @@
 .Login {
   padding-top: 0%;
   padding-left: 0%;
-  background-color: yellow;
+  width: 100vw;
+  height: 100vh;
+  background-color: skyblue;
   width: 100vw;
 }
 .mainlogin {
@@ -10,13 +12,16 @@
 }
 .login {
   position: fixed;
-  box-shadow: 0px 4px 20px white; /* Subtle shadow */
+  box-shadow: 0px 4px 20px black; /* Subtle shadow */
   border-radius: 10px;
   padding: 30px;
   margin: 50px;
   width: fit-content;
-  min-width: 30%;
+  margin-left: 30%;
+  margin-top: 5%;
+  width: 30%;
   display: flex;
+  height: 70%;
   flex-direction: column;
   gap: 15px;
   text-align: center;
@@ -41,7 +46,7 @@ form input {
   width: 80%;
   height: 40px;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid black;
   border-radius: 8px;
   outline: none;
   font-size: 16px;
@@ -67,7 +72,9 @@ form button {
 }
 
 form button:hover {
-  background: gold;
+  background: black;
+  color: yellow;
+  transition: 1s;
   transform: scale(1.05);
 }
 
@@ -79,7 +86,7 @@ form button:hover {
 
 .signup p a,
 .signin p a {
-  color: #ffcc00;
+  color: black;
   text-decoration: none;
   font-weight: bold;
 }
@@ -87,6 +94,7 @@ form button:hover {
 .signup p a:hover,
 .signin p a:hover {
   text-decoration: underline;
+  color: black;
 }
 .s {
   cursor: pointer;
@@ -121,8 +129,9 @@ img[alt="open"] {
   align-items: center;
 }
 .form-switch span:hover {
-  color: #ffcc00;
-  text-decoration: underline;
+  color: black;
+  transform: scale(10);
+  transition: 0.7s;
 }
 #remember-me {
   width: 20px;
@@ -162,7 +171,7 @@ img[alt="open"] {
 .landing-signin {
   padding: 8px 16px;
   background-color: #4a4aff;
-  color: white;
+  color: black;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -170,6 +179,7 @@ img[alt="open"] {
 
 .landing-signin:hover {
   background-color: #3737e2;
+  color: black;
 }
 
 /* Hero section */
@@ -181,7 +191,7 @@ img[alt="open"] {
 
 .landing-hero h1 {
   font-size: 36px;
-  color: white;
+  color: black;
   margin-bottom: 10px;
 }
 
@@ -190,10 +200,9 @@ img[alt="open"] {
   color: black;
 }
 
-/* Horizontal scrollable courses */
 .courses-scroll {
   display: flex;
-  gap: 20px;
+  gap: 18px;
   flex-direction: row;
   flex-wrap: wrap;
   padding-bottom: 10px;
@@ -215,7 +224,7 @@ img[alt="open"] {
 
 .course-card h3 {
   font-size: 20px;
-  color: #4a4aff;
+  color: black;
   margin-bottom: 8px;
 }
 
@@ -228,7 +237,9 @@ img[alt="open"] {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  width: 100vw;
+  height: 100vh;
+  background-color: skyblue;
   background: linear-gradient(to right, white, rgb(247, 247, 128));
   /* border: 2px solid black; */
   min-width: 98.5vw;

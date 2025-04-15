@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom"; // Import useNavigate for naviga
 import "./pages.css";
 import bulboff from "../assets/bulboff.jpg";
 import bulbon from "../assets/bulbon.jpeg";
-
+import bg2 from "../assets/bg2.jpg";
 const Login = () => {
   const [bgbulb, setBgbulb] = useState(bulboff);
   const [isInputFocused, setIsInputFocused] = useState(false);
@@ -81,7 +81,15 @@ const Login = () => {
   };
 
   return (
-    <div className="Login">
+    <div
+      className="Login"
+      style={{
+        backgroundImage: `url(bg2)`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        transition: "background-image 0.4s ease-in-out",
+      }}
+    >
       <div
         className="login"
         style={{
