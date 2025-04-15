@@ -1,9 +1,12 @@
 .product-card {
+  box-sizing: border-box;
   background-color: white;
+  box-shadow: 2px 2px 20px black;
+
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  width: 250px;
+  width: 280px;
   margin: 15px;
   transition: transform 0.3s ease;
   display: flex;
@@ -21,20 +24,20 @@
 }
 
 .product-content {
-  padding: 15px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 2px;
 }
 
 .product-title {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
-  color: #4a4aff;
+  color: black;
 }
 
 .product-detail {
-  font-size: 14px;
+  font-size: 15px;
   color: #555;
   flex-grow: 1;
 }
@@ -42,5 +45,5 @@
 .product-price {
   font-weight: bold;
   color: #1a1a1a;
-  font-size: 16px;
+  font-size: 15px;
 }

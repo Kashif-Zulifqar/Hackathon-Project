@@ -233,17 +233,7 @@ img[alt="open"] {
   color: #555;
 }
 /* Pages */
-#Menu {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: skyblue;
-  background: linear-gradient(to right, white, rgb(247, 247, 128));
-  /* border: 2px solid black; */
-  min-width: 98.5vw;
-}
+
 .menutext {
   text-align: center;
   margin-top: 20px;

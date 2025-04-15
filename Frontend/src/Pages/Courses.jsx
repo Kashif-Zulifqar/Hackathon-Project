@@ -36,7 +36,15 @@ export default function Courses() {
   };
 
   return (
-    <div className="course-page">
+    <div
+      className="course-page"
+      style={{
+        backgroundColor: "skyblue",
+        width: "100vw",
+        height: "100vh",
+        position: "fixed",
+      }}
+    >
       <nav className="course-navbar">
         <button onClick={() => navigate("/home")}>⬅ Back</button>
         {["Resources", "Videos", "Animations", "GroupChat", "Project"].map(

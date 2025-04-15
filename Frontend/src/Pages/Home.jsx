@@ -13,7 +13,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function Home() {
   const [profileHovered, setProfileHovered] = useState(false);
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // fake login state for now
+  const [isLoggedIn, setIsLoggedIn] = useState(true); // fake login state for now
 
   const navigate = useNavigate();
   const [courseview, setCourseview] = useState(false);
@@ -79,7 +79,14 @@ export default function Home() {
   };
 
   return (
-    <div className="homepage-container">
+    <div
+      className="homepage-container"
+      style={{
+        backgroundColor: "skyblue",
+        width: "100vw",
+        position: "relative",
+      }}
+    >
       {/* Left Sidebar */}
       <div
         className="profile-bar"
@@ -90,13 +97,13 @@ export default function Home() {
         {profileHovered && (
           <div className="dropdown-menu">
             {!isLoggedIn ? (
-              <button onClick={() => setIsLoggedIn(true)}>Login</button>
+              ""
             ) : (
               <>
                 <button onClick={() => alert("Summary Clicked!")}>
                   Summary
                 </button>
-                <button onClick={() => setIsLoggedIn(false)}>Logout</button>
+                <button onClick={() => setIsLoggedIn(true)}>Logout</button>
               </>
             )}
           </div>
