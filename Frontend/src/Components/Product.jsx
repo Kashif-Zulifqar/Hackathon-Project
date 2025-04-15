@@ -1,6 +1,5 @@
 import React from "react";
 import "./Components.css";
-
 function Product({ prodetails }) {
   const { proimg, name, price, detail } = prodetails;
 

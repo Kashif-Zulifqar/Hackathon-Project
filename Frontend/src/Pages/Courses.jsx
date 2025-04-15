@@ -1,5 +1,13 @@
 import React, { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
+import Product from "../Components/Product";
+import cloud from "./../assets/cloud.jpg";
+import ai from "./../assets/ai.jpg";
+import cyber from "./../assets/cyber.jpg";
+import datas from "./../assets/datas.jpg";
+import net from "./../assets/net.jpg";
+import pg from "./../assets/pg.jpg";
+// import "./Components.css";
 
 export default function Courses() {
   const navigate = useNavigate();
@@ -7,8 +15,26 @@ export default function Courses() {
   const course = location.state?.course;
 
   const [activeTab, setActiveTab] = useState("Resources");
-
-  // Handle case where course is not provided (e.g. refresh or direct URL access)
+  const prodetails = [
+    {
+      proimg: cloud,
+      name: "Inventory Management System",
+      detail:
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum quibusdam quia fugit, dolorem accusamus dolor! Rerum similique laudantium minima perspiciatis",
+    },
+    {
+      proimg: ai,
+      name: "Chatbot",
+      detail:
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum quibusdam quia fugit, dolorem accusamus dolor! Rerum similique laudantium minima perspiciatis",
+    },
+    {
+      proimg: cyber,
+      name: "Ecommerce web app",
+      detail:
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum quibusdam quia fugit, dolorem accusamus dolor! Rerum similique laudantium minima perspiciatis",
+    },
+  ];
   if (!course) {
     return (
       <div className="course-page">
@@ -29,7 +55,27 @@ export default function Courses() {
       case "GroupChat":
         return <p> Group chat coming soon</p>;
       case "Project":
-        return <p> Final Project details</p>;
+        return (
+          <>
+            <div className="createNew">
+              <button style={{ textAlign: "center", marginLeft: "45%" }}>
+                Create New Project
+              </button>
+            </div>
+            <div className="items">
+              {prodetails.map((course, ind) => (
+                <div className="product-card">
+                  <img src={course.proimg} className="product-image" />
+                  <div className="product-content">
+                    <h3 className="product-title">{course.name}</h3>
+                    <p className="product-detail">{course.detail}</p>
+                    <button>Contribute</button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </>
+        );
       default:
         return null;
     }
@@ -60,7 +106,11 @@ export default function Courses() {
         )}
       </nav>
       <div className="course-content">
-        <h2>{course.name}</h2>
+        <h2
+          style={{ fontSize: "30px", position: "static", textAlign: "center" }}
+        >
+          {activeTab}
+        </h2>
         {renderTabContent()}
       </div>
     </div>
