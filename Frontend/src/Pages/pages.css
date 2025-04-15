@@ -1,0 +1,288 @@
+/* Login */
+.Login {
+  padding-top: 0%;
+  padding-left: 0%;
+  background-color: yellow;
+  width: 100vw;
+}
+.mainlogin {
+  background-color: yellow;
+}
+.login {
+  position: fixed;
+  box-shadow: 0px 4px 20px white; /* Subtle shadow */
+  border-radius: 10px;
+  padding: 30px;
+  margin: 50px;
+  width: fit-content;
+  min-width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.login h1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3737e2;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+form input {
+  color: #3737e2;
+  width: 80%;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  transition: border 0.3s ease-in-out;
+}
+
+form input:focus {
+  border-color: #3737e2;
+  box-shadow: 0px 0px 8px rgba(239, 15, 93, 0.532);
+}
+
+form button {
+  width: 80%;
+  height: 40px;
+  background: #3737e2;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: bacground 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+form button:hover {
+  background: gold;
+  transform: scale(1.05);
+}
+
+.signin p,
+.signup p {
+  font-size: 14px;
+  color: #666;
+}
+
+.signup p a,
+.signin p a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup p a:hover,
+.signin p a:hover {
+  text-decoration: underline;
+}
+.s {
+  cursor: pointer;
+  font-weight: bold;
+}
+img[alt="open"] {
+  position: absolute;
+  width: 20px;
+  z-index: 10;
+  margin: 100px;
+}
+.form-switch {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #444;
+  text-align: center;
+}
+
+.form-switch p {
+  margin: 0;
+}
+
+.form-switch span {
+  color: #3737e2;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+.remember {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.form-switch span:hover {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+#remember-me {
+  width: 20px;
+}
+/* Landing  Page */
+.landing-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: black;
+}
+
+.landing-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.Loginbuttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+#signup {
+  background-color: white;
+  color: #3737e2;
+}
+.landing-logo img {
+  /* font-size: 24px;
+  font-weight: bold;
+  color: #4a4aff; */
+  width: 120px;
+  margin: -10px;
+  position: fixed;
+  border-radius: 50%;
+}
+
+.landing-signin {
+  padding: 8px 16px;
+  background-color: #4a4aff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.landing-signin:hover {
+  background-color: #3737e2;
+}
+
+/* Hero section */
+.landing-hero {
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 50px;
+}
+
+.landing-hero h1 {
+  font-size: 36px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.landing-hero p {
+  font-size: 18px;
+  color: black;
+}
+
+/* Horizontal scrollable courses */
+.courses-scroll {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+}
+
+.course-card {
+  min-width: 320px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-card h3 {
+  font-size: 20px;
+  color: #4a4aff;
+  margin-bottom: 8px;
+}
+
+.course-card p {
+  font-size: 14px;
+  color: #555;
+}
+/* Pages */
+#Menu {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  background: linear-gradient(to right, white, rgb(247, 247, 128));
+  /* border: 2px solid black; */
+  min-width: 98.5vw;
+}
+.menutext {
+  text-align: center;
+  margin-top: 20px;
+}
+.menutitle {
+  font-size: 30px;
+  font-weight: bolder;
+  color: black;
+}
+.menudescryption {
+  font-size: 12px;
+  /* border: 2px solid yellow; */
+  width: 40vw;
+  text-align: center;
+  margin-left: 30%;
+}
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  /* border: 2px solid yellow; */
+  margin-top: 10px;
+  margin-bottom: 0px;
+  bottom: 0;
+}
+.menu-wrapper {
+  position: relative;
+}
+
+.profile-bar {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.profile-icon {
+  font-size: 1.5rem;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
